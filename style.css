@@ -1,0 +1,290 @@
+body {
+  margin: 5% 5% 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: bold;
+  background-color: #1c1b1d;
+  color: #e6e1e3;
+}
+
+/* Navigation section  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#logo img {
+  width: 540px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #f8f8f8;
+  font-weight: 300;
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+.active,
+.nav-links a:hover {
+  background-color: #75778de0;
+  padding: 10px;
+}
+
+.nav-links > li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+}
+
+/* Hero section  */
+#hero-section {
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: antiquewhite;
+  margin-bottom: 100px;
+}
+
+.hero-heading {
+  padding-left: 35%;
+  padding-top: 15%;
+}
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border: none;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.btn a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img > img {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+/* Features section  */
+#features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#features div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(250, 235, 215, 0.226);
+  margin: 80px 30px;
+}
+
+#features img {
+  width: 50px;
+  margin-top: 15px;
+}
+
+/* How it Works section  */
+#howitworks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 150px 0px;
+}
+
+#howitworks img {
+  width: 450px;
+  margin-left: 80px;
+}
+
+.how-description {
+  padding: 10px 60px;
+}
+
+/* Products section*/
+.products-heading {
+  width: 130px;
+  background-color: #7f12eb1c;
+  padding: 10px;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 200px;
+}
+
+#products img {
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #64667a5e;
+  padding: 40px;
+  border: 2px solid #64667a5e;
+  border-radius: 10px;
+}
+
+.product-item:hover {
+  border: 2px solid gold;
+}
+
+.product-item > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-tag {
+  background-color: #091057;
+  color: antiquewhite;
+  border-style: none;
+  padding: 10px;
+}
+
+.buy-item {
+  background-color: aqua;
+  color: whitesmoke;
+  border-style: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.buy-item:hover {
+  background-color: rgba(109, 13, 173, 0.863);
+}
+
+/* About section */
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  gap: 50px;
+  margin: 50px 0px;
+}
+
+.about-us {
+  text-align: center;
+}
+
+#contact {
+  text-align: right;
+}
+
+/* Footer section  */
+footer {
+  background-color: #75778d34;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1280px) {
+  body {
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+  }
+  #hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+  .hero-heading {
+    width: 100%;
+    padding: 0%;
+    text-align: center;
+    font-size: smaller;
+  }
+  #features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #features > div {
+    padding: 5% 10%;
+    margin: 20px 0;
+  }
+  #howitworks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #howitworks img {
+    margin: 10%;
+    width: 80%;
+  }
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .about-us {
+    text-align: center;
+  }
+
+  #contact {
+    text-align: left;
+  }
+  footer {
+    margin: 0;
+  }
+}
